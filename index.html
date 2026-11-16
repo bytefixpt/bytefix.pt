@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ByteFix — limpeza, diagnóstico, organização de cabos e montagem de computadores no Porto e arredores.">
+  <meta name="theme-color" content="#0b1117">
+  <title>ByteFix | O teu PC. O nosso cuidado.</title>
+  <style>
+    :root{--bg:#0b1117;--surface:#121c25;--surface2:#172630;--cyan:#21d6c2;--text:#f4f7f8;--muted:#a8b6bf;--line:#293943}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+    header{border-bottom:1px solid var(--line);background:rgba(11,17,23,.92)}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;font-size:1.28rem;font-weight:850;letter-spacing:-.05em}
+    .mark{width:34px;height:34px;border:2px solid var(--cyan);border-radius:9px;display:grid;place-items:center;color:var(--cyan);font-weight:900;font-size:.9rem}
+    .brand span:last-child{color:var(--cyan)}
+    .navlinks{display:flex;gap:25px;color:var(--muted);font-size:.93rem}
+    .navlinks a:hover{color:var(--cyan)}
+    .hero{padding:92px 0 82px;display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}
+    .eyebrow{color:var(--cyan);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+    h1{font-size:clamp(2.8rem,6vw,5.25rem);line-height:1.02;letter-spacing:-.065em;margin:18px 0}
+    h1 em{font-style:normal;color:var(--cyan)}
+    .lead{max-width:620px;color:var(--muted);font-size:1.12rem}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:8px;font-weight:750;border:1px solid var(--cyan);background:var(--cyan);color:#071310}
+    .btn.secondary{background:transparent;color:var(--text);border-color:var(--line)}
+    .btn:hover{filter:brightness(1.08)}
+    .hero-note{border:1px solid var(--line);background:linear-gradient(145deg,var(--surface),#0e171e);padding:27px;border-radius:14px}
+    .hero-note .mini{color:var(--cyan);font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+    .hero-note h2{font-size:1.5rem;line-height:1.2;margin:12px 0}
+    .hero-note p{color:var(--muted);margin-bottom:0}
+    section{padding:66px 0;border-top:1px solid var(--line)}
+    .section-head{max-width:650px;margin-bottom:28px}
+    h2{font-size:clamp(1.8rem,3vw,2.5rem);letter-spacing:-.045em;line-height:1.15;margin:9px 0 12px}
+    .section-head p,.muted{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .card{background:var(--surface);border:1px solid var(--line);padding:21px;border-radius:12px}
+    .num{color:var(--cyan);font-size:.78rem;font-weight:850;letter-spacing:.1em}
+    .card h3{margin:12px 0 7px;font-size:1.08rem}
+    .card p{margin:0;color:var(--muted);font-size:.94rem}
+    .price-list{max-width:760px;border-top:1px solid var(--line)}
+    .price{display:flex;justify-content:space-between;gap:18px;padding:15px 2px;border-bottom:1px solid var(--line)}
+    .price strong{color:var(--cyan);white-space:nowrap}
+    .fine{font-size:.86rem;color:var(--muted);margin-top:15px}
+    .contact{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .contact p{color:var(--muted);margin-bottom:0}
+    footer{padding:27px 0;color:var(--muted);font-size:.86rem}
+    footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:65px 0}.cards{grid-template-columns:repeat(2,1fr)}.navlinks{gap:13px}}
+    @media(max-width:540px){.wrap{width:min(100% - 28px,1080px)}nav{min-height:66px}.navlinks{display:none}.hero{padding:52px 0}.cards{grid-template-columns:1fr}.contact{align-items:flex-start;flex-direction:column}.price{font-size:.94rem}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="ByteFix início"><span class="mark">BF</span><span>Byte<span>Fix</span></span></a>
+      <div class="navlinks">
+        <a href="#servicos">Serviços</a><a href="#precos">Preços</a><a href="#sobre">Sobre</a><a href="#contactos">Contactos</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero" id="inicio">
+    <div>
+      <div class="eyebrow">Serviços informáticos · Porto e arredores</div>
+      <h1>O teu PC.<br><em>O nosso cuidado.</em></h1>
+      <p class="lead">Ajuda prática para manter o teu computador limpo, organizado e a funcionar como deve ser. Explicamos o que encontramos antes de avançar com qualquer trabalho.</p>
+      <div class="actions">
+        <a class="btn" href="https://www.instagram.com/bytefix.pt/" target="_blank" rel="noopener">Falar pelo Instagram</a>
+        <a class="btn secondary" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+    <aside class="hero-note">
+      <div class="mini">ByteFix · PC Services</div>
+      <h2>Sem complicações. Com cuidado.</h2>
+      <p>Limpeza, diagnóstico, organização de cabos e montagem de computadores, com orçamento combinado antes de começar.</p>
+    </aside>
+  </div>
+
+  <section id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">O que fazemos</div>
+        <h2>Serviços para o teu computador</h2>
+        <p>O serviço certo depende do equipamento e do problema. Envia uma mensagem com o modelo do PC e uma breve descrição do que precisas.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="num">01 / MANUTENÇÃO</div><h3>Limpeza de PC</h3><p>Limpeza exterior e interior acessível, com atenção ao pó e à organização geral.</p></article>
+        <article class="card"><div class="num">02 / DIAGNÓSTICO</div><h3>Resolução de problemas</h3><p>Análise inicial de problemas de hardware ou software e explicação dos próximos passos.</p></article>
+        <article class="card"><div class="num">03 / ORGANIZAÇÃO</div><h3>Cable management</h3><p>Arrumação dos cabos para uma montagem mais limpa e melhor organização do espaço.</p></article>
+        <article class="card"><div class="num">04 / MONTAGEM</div><h3>Montagem de PCs</h3><p>Montagem de componentes compatíveis e verificação básica do funcionamento.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="precos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Preços indicativos</div>
+        <h2>Quanto custa?</h2>
+        <p>Valores iniciais. O preço final é confirmado por mensagem depois de percebermos o serviço e o equipamento.</p>
+      </div>
+      <div class="price-list">
+        <div class="price"><span>Limpeza de PC</span><strong>desde 10 €</strong></div>
+        <div class="price"><span>Organização de cabos</span><strong>desde 10 €</strong></div>
+        <div class="price"><span>Diagnóstico inicial</span><strong>desde 5 €</strong></div>
+        <div class="price"><span>Resolução de problemas</span><strong>desde 10 €</strong></div>
+        <div class="price"><span>Montagem de PC</span><strong>desde 20 €</strong></div>
+      </div>
+      <p class="fine">Peças, componentes e licenças não estão incluídos. Qualquer custo adicional é comunicado e aprovado antes do trabalho.</p>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Sobre a ByteFix</div>
+        <h2>Trabalho cuidado e comunicação clara.</h2>
+        <p>A ByteFix é um projeto de serviços informáticos focado em manutenção e montagem de computadores. O objetivo é tratar cada equipamento com cuidado e explicar de forma simples o que é necessário fazer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contactos">
+    <div class="wrap">
+      <div class="contact">
+        <div><div class="eyebrow">Vamos falar?</div><h2>Conta-nos o que o teu PC precisa.</h2><p>Envia mensagem pelo Instagram para pedir informações ou um orçamento.</p></div>
+        <a class="btn" href="https://www.instagram.com/bytefix.pt/" target="_blank" rel="noopener">Instagram @bytefix.pt</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© <span id="year"></span> ByteFix PC Services</span><span>Porto e arredores · O teu PC. O nosso cuidado.</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
